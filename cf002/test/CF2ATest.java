@@ -2,18 +2,18 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CF002ATest {
+public class CF2ATest {
 
     @Test
     public void testSinglePlayer() {
-        CF002A.Game g = new CF002A.Game();
+        CF2A.Game g = new CF2A.Game();
         g.add("foo", 1);
         assertEquals("foo", g.winner());
     }
 
     @Test
     public void testEmpty() {
-        CF002A.Game g = new CF002A.Game();
+        CF2A.Game g = new CF2A.Game();
         try {
             g.winner();
             fail("should have thrown");
@@ -24,7 +24,7 @@ public class CF002ATest {
 
     @Test
     public void testSimple() {
-        CF002A.Game g = new CF002A.Game();
+        CF2A.Game g = new CF2A.Game();
         g.add("foo", 1);
         g.add("bar", 1);
         g.add("foo", 2);
@@ -34,7 +34,7 @@ public class CF002ATest {
 
     @Test
     public void testTwoPlayerTie() {
-        CF002A.Game g = new CF002A.Game();
+        CF2A.Game g = new CF2A.Game();
         g.add("foo", 1);
         g.add("bar", 1);
         g.add("foo", 1);
@@ -45,7 +45,7 @@ public class CF002ATest {
 
     @Test
     public void firstAchieverDrops() {
-        CF002A.Game g = new CF002A.Game();
+        CF2A.Game g = new CF2A.Game();
         g.add("foo", 10);
         g.add("bar", 1);
         g.add("foo", -10);
@@ -56,7 +56,7 @@ public class CF002ATest {
 
     @Test
     public void manyPlayers() {
-        CF002A.Game g = new CF002A.Game();
+        CF2A.Game g = new CF2A.Game();
         g.add("foo", 1);
         g.add("bar", 1);
         g.add("quux", 1);
@@ -69,7 +69,7 @@ public class CF002ATest {
 
     @Test
     public void doh() {
-        CF002A.Game g = new CF002A.Game();
+        CF2A.Game g = new CF2A.Game();
         g.add("foo", 1000);
         g.add("bar", 7);
         g.add("foo", -993);
@@ -78,7 +78,7 @@ public class CF002ATest {
 
     @Test
     public void test6() {
-        CF002A.Game g = new CF002A.Game();
+        CF2A.Game g = new CF2A.Game();
         g.add("aawtvezfntstrcpgbzjbf", 681);
         g.add("zhahpvqiptvksnbjkdvmknb", -74);
         g.add("aawtvezfntstrcpgbzjbf", 661);

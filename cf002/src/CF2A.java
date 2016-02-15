@@ -1,7 +1,7 @@
 import java.util.*;
 
 // http://codeforces.com/problemset/problem/2/A
-public class CF002A {
+public class CF2A {
 
     public static class Game {
         private final int MAX_ROUNDS = 1000;
